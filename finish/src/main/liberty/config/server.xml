@@ -37,9 +37,9 @@
     <!-- tag::allowedMethods-preflight[] -->
     allowedMethods="OPTIONS, DELETE"
     <!-- end::allowedMethods-preflight[] -->
-    <!-- tag::allowedCredentials-preflight[] -->
+    <!-- tag::allowCredentials-preflight[] -->
     allowCredentials="true"
-    <!-- end::allowedCredentials-preflight[] -->
+    <!-- end::allowCredentials-preflight[] -->
     <!-- tag::allowedHeaders-preflight[] -->
     allowedHeaders="MyOwnHeader1, MyOwnHeader2"
     <!-- end::allowedHeaders-preflight[] -->
