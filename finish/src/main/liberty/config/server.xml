@@ -7,23 +7,45 @@
 <httpEndpoint host="*" httpPort="${default.http.port}" httpsPort="${default.https.port}"
     id="defaultHttpEndpoint"/>
 
-<webApplication location="io.openliberty.guides.cors.war" contextRoot="/"/>
+<webApplication location="guide-cors.war" contextRoot="/"/>
 
 <!-- tag::simple-config[] -->
+<!-- tag::domain-simple[] -->
 <cors domain="/configurations/simple"
+<!-- end::domain[] -->
+    <!-- tag::allowedOrigins-simple[] -->
     allowedOrigins="openliberty.io"
+    <!-- end::allowedOrigins-simple[] -->
+    <!-- tag::allowedMethods-simple[] -->
     allowedMethods="GET"
+    <!-- end::allowedMethods-simple[] -->
+    <!-- tag::allowCredentials-simple[] -->
     allowCredentials="true"
+    <!-- end::allowCredentials-simple[] -->
+    <!-- tag::exposeHeaders-simple[] -->
     exposeHeaders="MyHeader"/>
+    <!-- end::exposeHeaders-simple[] -->
 <!-- end::simple-config[] -->
 
 <!-- tag::preflight-config[] -->
+<!-- tag::domain-preflight[] -->
 <cors domain="/configurations/preflight"
+<!-- end::domain-preflight[] -->
+    <!-- tag::allowedOrigins-preflight[] -->
     allowedOrigins="*"
+    <!-- end::allowedOrigins-preflight[] -->
+    <!-- tag::allowedMethods-preflight[] -->
     allowedMethods="OPTIONS, DELETE"
+    <!-- end::allowedMethods-preflight[] -->
+    <!-- tag::allowedCredentials-preflight[] -->
     allowCredentials="true"
+    <!-- end::allowedCredentials-preflight[] -->
+    <!-- tag:allowedHeaders=preflight[] -->
     allowedHeaders="MyOwnHeader1, MyOwnHeader2"
+    <!-- end::allowedHeaders-preflight[] -->
+    <!-- tag::maxAge[] -->
     maxAge="10"/>
+    <!-- end::maxAge[] -->
 <!-- end::preflight-config[] -->
 
 </server>
