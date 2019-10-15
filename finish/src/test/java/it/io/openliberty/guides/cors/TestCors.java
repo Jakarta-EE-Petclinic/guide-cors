@@ -48,8 +48,8 @@ public class TestCors {
     }
     // end::testSimpleCorsRequest[]
 
-    // tag::testPreflightCorsRequest[]
     @Test
+    // tag::testPreflightCorsRequest[]
     public void testPreflightCorsRequest() throws IOException {
         HttpURLConnection connection = HttpUtils.sendRequest(
             pathToHost + "configurations/preflight",

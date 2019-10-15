@@ -12,7 +12,7 @@
 <!-- tag::simple-config[] -->
 <!-- tag::domain-simple[] -->
 <cors domain="/configurations/simple"
-<!-- end::domain[] -->
+<!-- end::domain-simple[] -->
     <!-- tag::allowedOrigins-simple[] -->
     allowedOrigins="openliberty.io"
     <!-- end::allowedOrigins-simple[] -->
@@ -40,7 +40,7 @@
     <!-- tag::allowedCredentials-preflight[] -->
     allowCredentials="true"
     <!-- end::allowedCredentials-preflight[] -->
-    <!-- tag:allowedHeaders=preflight[] -->
+    <!-- tag::allowedHeaders-preflight[] -->
     allowedHeaders="MyOwnHeader1, MyOwnHeader2"
     <!-- end::allowedHeaders-preflight[] -->
     <!-- tag::maxAge[] -->
